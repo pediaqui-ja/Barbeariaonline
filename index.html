@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Barbearia Estilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Agende Seu Horário na Barbearia Estilo</h1>
+        
+        <form id="agendamentoForm" class="formulario">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="tel" id="telefone" placeholder="Telefone" required>
+            <input type="date" id="data" placeholder="data" required>
+            <input type="time" id="hora" placeholder="hora" required>
+            <select id="servico" required>
+                <option value="" disabled selected>Selecione o Serviço</option>
+                <option value="Corte">Corte R$20,00</option>
+                <option value="Barba">Barba R$20,00</option>
+                <option value="Corte + Barba">Corte + Barba R$40,00</option>
+                <option value="Hidratação">Hidratação R$50,00</option>
+            </select>
+            <button type="button" id="whatsappButton" class="botao">Enviar Agendamento pelo WhatsApp</button>
+        </form>
+        
+        <p id="mensagem" class="mensagem"></p>
+        
+        <h2 class="galeria-titulo">Galeria de Fotos</h2>
+        <div class="galeria">
+            <img src="imagem1.jpg" alt="Imagem 1 da Barbearia">
+            <img src="imagem2.jpg" alt="Imagem 2 da Barbearia">
+            <img src="imagem3.jpg" alt="Imagem 3 da Barbearia">
+            <img src="imagem4.jpg" alt="Imagem 4 da Barbearia">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
